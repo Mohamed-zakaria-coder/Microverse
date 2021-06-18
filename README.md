@@ -1,2 +1,0 @@
-# Microverse
-collaborative project
