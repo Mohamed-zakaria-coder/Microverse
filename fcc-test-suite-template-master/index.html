@@ -8,20 +8,102 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">freeCodeCamp Survey Form
+    </h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform
 
-    <!--
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Name
+      <input id="name" required type="text" placeholder="Enter your name" >
+    </label>
+    <label id="email-label">Email
+      <input type="email" required id="email" placeholder="Enter your Email">
+    </label>
+    <label id="number-label">Age
+      (optional)
+      <input id="number" type="number" max="40" min="5" placeholder="Age">
+    </label>
+    
+    <p>Which option best describes your current role?
 
-    Hello Camper!
+    </p>
+    <select id="dropdown" required>
+      <option disabled>Selcet current mode</option>
+      <option value="student">Student</option>
+      <option value="fulljob">Full Time Job</option>
+      <option value="Fulltime">Full Time Learner</option>
+      <option value="prefer">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
+    <p>Would you recommend freeCodeCamp to a friend?
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+    </p>
+    <label>Definitely</label>
+    <input value="Definitely" name="a" type="radio">
+    <label>Maybe</label>
+    <input value="Maybe" name="a" type="radio"> 
+    <label >Not sure</label>
+    <input value="Not Sure" name="a" type="radio">
+    
+    
+    <p>What is your favorite feature of freeCodeCamp?
 
-    - The freeCodeCamp Team
+    </p>
+    <select name="a"  required>
+      <option disabled>Select an option </option >
+      <option value="challenges" >Challenges</option>
+      <option value="projects">Projects</option>
+      <option value="community">Community</option>
+      <option value="Open">Open Source</option>
+    </select>
+    <p>What would you like to see improved? (Check all that apply)
 
-    -->
-    “Hello World we are software developers!”
+    </p>
+    <label>Front-end Projects
+      <input type="checkbox" value="front">
+    </label>
+    <label>Back-end Projects
+      <input type="checkbox" value="back">
+    </label>
+    <label>Data Visualization
+      <input type="checkbox" value="Data" >
+    </label>
+    <label>Challenges
+      <input type="checkbox" value="challenges">
+    </label>
+    <label>Open Source Community
+      <input type="checkbox" value="Open Source Community">
+    </label>
+    <label>Gitter help rooms
+      <input type="checkbox" value="Gitter help rooms">
+    </label>
+    <label>Videos
+      <input type="checkbox" value="Videos">
+    </label>
+    <label >City Meetups
+      <input type="checkbox" value="City Meetups">
+    </label> 
+    
+    <label >Wiki
+
+      <input type="checkbox" value="
+      Wiki
+      ">
+    </label>
+    <label >Forum
+      <input type="checkbox" value="Forum">
+    </label>
+    <label >Additional Courses
+      <input type="checkbox" value="Additional Courses">
+    </label>
+    <p>Any comments or suggestions?
+
+    </p>
+    <textarea >Enter your comment here...</textarea>
+    <button id="submit">Submit</button>
+  </form>
+
     <script  src="js/index.js"></script>
   </body>
 </html>
